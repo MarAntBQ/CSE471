@@ -1,0 +1,65 @@
+.places-list {
+    padding-top: 5px;
+    .place-box {
+        display: block;
+        margin: 10px;
+        background: white;
+        border: 1px solid rgba(128, 128, 128, 0.274);
+        box-shadow: 0 3px 7px 0 rgb(0 0 0 / 12%), inset 0 -1px 0 0 #dadce0;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        .map {
+            width: 100%;
+            border: 0px;
+        }
+        .details {
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            .left {
+                p {
+    
+                }
+                .placeName {
+                    font-weight: bold;
+                    font-size: 16px;
+                    color: $color1;
+                    text-transform: uppercase;
+                    margin-bottom: 5px;
+                }
+                .reviews {
+                    //margin-top: 5px;
+                    font-weight: bold;
+                }
+            }
+            .right {
+                display: flex;
+                min-width: 62px;
+                max-width: 62px;
+                .top {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    font-size: 15px;
+                    .fa-heart {
+                        margin-right: 5px;
+                        color: gray;
+                        &.active {
+                            color: $color2;
+                        }
+                    }
+                    p {
+                        font-size: inherit;
+                        .fa-star {
+                            color: $color3;
+                        }
+                        strong {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

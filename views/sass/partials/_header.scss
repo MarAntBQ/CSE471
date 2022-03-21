@@ -1,0 +1,160 @@
+header {
+    ul {
+        display: none;
+        .profile {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            img {
+                display: block;
+                border-radius: 50%;
+                width: 100px;
+                margin: 5px auto;
+            }
+            h2 {
+                margin-top: 5px;
+                color: $color4;
+                font-size: 15px;
+                text-align: center;
+            }
+            .logout-btn {
+                display: block;
+                background: $color2;
+                color: $color6;
+                width: 75%;
+                margin: 10px auto;
+                text-align: center;
+                text-decoration: none;
+                //margin: 5px;
+                padding: 10px 10px;
+                border-radius: 3px;
+                font-size: 12.5px;
+                font-weight: 600;
+                text-transform: uppercase;
+                transition: 0.3s;
+                color: white;
+                &:hover {
+                    background: $color1;
+                }
+            }
+        }
+    }
+    nav {
+        display: flex;
+        //justify-content: space-between;
+        align-items: center;
+        padding: 5px 10px;
+        box-shadow: 0 3px 7px 0 rgb(0 0 0 / 12%), inset 0 -1px 0 0 #dadce0;
+        background: white;
+        .logoCtnr {
+            display: flex;
+            margin-left: 50px;
+            img {
+                width: 20px;
+                display: block;
+            }
+            h1 {
+                color: $color2;
+                font-size: 20px;
+            }
+        }
+        #menu-btn, #user-btn {
+            font-size: 20px;
+            padding: 5px;
+            color: $color5;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover {
+                color: $color3;
+            }
+        }
+    }
+
+    #mobile-menu {
+        
+        transition: 0.3s;
+        &.active {
+            background: rgba(0, 0, 0, 0.178);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 12;
+            overflow: hidden;
+            ul {
+                background: white;
+                display: block;
+                width: 70%;
+                max-height: calc(100% - 40px);
+                height: calc(100% - 40px);
+                overflow-y: auto;
+                list-style: none;
+                @include scroll;
+                animation: appearMenu 0.5s ease;
+                @keyframes appearMenu {
+                    from {
+                        transform: translateX(-100%);
+                    }
+                    to {
+                        transform: translateX(0);
+                    }
+                }
+                //padding: 10px;
+                //
+                li {
+                    a {
+                        text-decoration: none;
+                        display: block;
+                        padding: 10px;
+                        color: $color5;
+                        transition: 0.3s;
+                        &:hover, &.active {
+                            background: $color2;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        &.desactive {
+            background: rgba(0, 0, 0, 0.178);
+            position: block;
+            width: 100%;
+            height: 100%;
+            z-index: 12;
+            overflow: hidden;
+            ul {
+                background: white;
+                display: fixed;
+                width: 70%;
+                max-height: calc(100% - 40px);
+                height: calc(100% - 40px);
+                overflow-y: auto;
+                list-style: none;
+                animation: DappearMenu 0.5s ease;
+                @include scroll;
+                @keyframes DappearMenu {
+                    from {
+                        transform: translateX(0);
+                    }
+                    to {
+                        transform: translateX(-100%);
+                    }
+                }
+                //padding: 10px;
+                //
+                li {
+                    a {
+                        text-decoration: none;
+                        display: block;
+                        padding: 10px;
+                        color: $color5;
+                        transition: 0.3s;
+                        &:hover, &.active {
+                            background: $color2;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

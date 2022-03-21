@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('includes/head.ejs')%>
+    <%- include('includes/pwa.ejs')%>
+</head>
+<body>
+    <div class="phone">
+        <%- include('includes/notifications.ejs')%>
+        <div class="app-body-login">
+            <%- include('pages/' + PagetoLoad) %>
+        </div>
+    </div>
+</body>
+</html>

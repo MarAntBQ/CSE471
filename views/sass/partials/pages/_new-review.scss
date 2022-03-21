@@ -1,0 +1,136 @@
+.new-review {
+    padding-top: 10px;
+
+    .return-btn {
+        //margin-top: 10px;
+    }
+
+    h2 {}
+
+    hr {
+        background: $color5;
+        border: 0px;
+        height: 0.5px;
+        margin: 10px 0px;
+    }
+
+    .place-before {
+        padding: 5px 0px;
+        display: flex;
+        align-items: center;
+
+        img {
+            display: block;
+            width: 45px;
+            height: 45px;
+        }
+
+        .place-title {
+            font-size: 12px;
+            padding-left: 3px;
+
+            p {
+                &:nth-child(1) {
+                    font-weight: bold;
+                    color: $color3;
+                }
+
+                &:nth-child(2) {
+                    font-size: 10px;
+                    color: $color4;
+                }
+            }
+        }
+    }
+
+    textarea {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        height: 25%;
+        min-height: 25%;
+        max-height: 25%;
+        border: 0px;
+        //border-top: 1px solid $color1;
+        background: rgb(240, 240, 240);
+        color: $color6;
+        padding: 10px;
+        font-family: inherit;
+        display: block;
+        font-size: 13px;
+        margin: 5px auto;
+
+        //margin: 30px 0px;
+        &:focus {
+            outline: 0;
+
+        }
+
+        scrollbar-width: thin;
+        scrollbar-color: $color3 $color2;
+
+        &,
+        * {
+            box-sizing: border-box;
+        }
+
+        &::-webkit-scrollbar {
+            width: 4px;
+            height: 8px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: $color2;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $color3;
+        }
+    }
+
+    .stars-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.5px 0px;
+
+        .rate {
+            color: $color5;
+            cursor: pointer;
+            &:hover {
+                color: $color6;
+            }
+            .fa-star {
+                transition: 0.3s;
+                &:hover, &.active {
+                    color: $color1;
+                }
+            }
+        }
+
+        .fa-camera {
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $color3;
+            color: white;
+            width: 35px;
+            height: 35px;
+            transition: 0.3s;
+            &:hover {
+                background: $color2;
+            }
+        }
+    }
+
+    .photosGalery {
+        margin: 5px 0px;
+        display: flex;
+        justify-content: space-around;
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}

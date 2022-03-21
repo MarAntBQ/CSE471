@@ -1,0 +1,102 @@
+body {
+    min-width: 300px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .phone {
+        position: relative;
+        width: 300px;
+        min-width: 300px;
+        max-width: 300px;
+        height: 520px;
+        min-height: 520px;
+        max-height: 520px;
+        border: 10px solid black;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        border: 6px solid $color6;
+        border-left: 10px solid $color6;
+        border-right: 10px solid $color6;
+        border-radius: 30px;
+        box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.1) !important;
+        //margin: 30px auto;
+        .notifications {
+            font-size: 11px;
+            color: $color4;
+            background: rgba(128, 128, 128, 0.158);
+            padding: 5px 10px;
+            user-select: none;
+            min-height: 22px;
+            max-height: 22px;
+        }
+        .app-body-login, .app-body, main {
+            &.app-body-login {
+                height: calc(100% - 22px);
+            }
+            height: calc(100% - 40px);
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 0px 10px;
+            scrollbar-width: thin;
+            scrollbar-color: $color3 $color2;
+
+            &,
+            * {
+                box-sizing: border-box;
+            }
+
+            &::-webkit-scrollbar {
+                width: 4px;
+                height: 8px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: $color2;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: $color3;
+            }
+
+            h1 {
+                color: $color2;
+            }
+            h2, h3, h4, h5, h6 {
+                color: $color4;
+            }
+
+            p, div {
+                color: #535353;
+                strong {
+                    color: #1f1f1f;
+                }
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            //Components
+            @import 'components/forms';
+            @import 'components/btns';
+            @import 'components/places-list';
+            //Pages
+            @import 'pages/login';
+            @import 'pages/register';
+            @import 'pages/recover';
+            @import 'pages/home';
+            @import 'pages/info-place';
+            @import 'pages/map';
+            @import 'pages/reviews';
+            @import 'pages/new-review';
+            @import 'pages/open-gallery';
+            @import 'pages/history';
+            @import 'pages/search';
+            @import 'pages/results';
+        }
+    }
+}

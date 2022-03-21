@@ -1,0 +1,139 @@
+.info-place {
+    padding-top: 10px;
+
+    .return-btn {
+        position: absolute;
+        z-index: 10;
+        background: rgba(0, 0, 0, 0.11);
+        color: white;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 20px;
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.60);
+        }
+    }
+
+    img {
+        position: absolute;
+        z-index: 9;
+        left: 0;
+        box-shadow: 0 3px 7px 0 rgb(0 0 0 / 12%), inset 0 -1px 0 0 #dadce0;
+        top: 40px;
+    }
+
+    h2 {}
+
+    .subtitle {
+        margin: 5px 0px;
+        font-size: 15px;
+        font-weight: 590;
+    }
+
+    .place-headers {
+        margin-top: 80px;
+        display: flex;
+
+        .left {
+            width: 100%;
+        }
+
+        .right {
+            display: flex;
+            align-content: flex-start;
+            flex-wrap: wrap;
+            min-width: 100px;
+            max-width: 100px;
+
+            .book-btn {
+                width: 100%;
+                display: block;
+                text-align: center;
+                border-radius: 3px;
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: 0.3s;
+                padding: 5px;
+                color: white;
+                margin-top: 5px;
+                background: $color1;
+                
+                &:hover {
+                    background: $color2;
+                }
+            }
+
+            .top {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 22px;
+
+                .fa-heart {
+                    margin-right: 5px;
+                    color: gray;
+                    transition: 0.3s;
+                    cursor: pointer;
+                    &:hover {
+                        color: $color2;
+                    }
+                    //font-size: 25px;
+                    &.active {
+                        color: $color2;
+                        &:hover {
+                            color: gray;
+                        }
+                    }
+                }
+
+                p {
+                    font-size: inherit;
+
+                    .fa-star {
+                        color: $color3;
+                    }
+
+                    strong {
+                        //font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    hr {
+        background: $color5;
+        border: 0px;
+        height: 0.5px;
+        margin: 10px 0px;
+    }
+
+    .place-description {
+        text-align: justify;
+        line-height: 1.5em;
+    }
+
+    .login-register-btn{
+        display: block;
+        border-bottom: 2px solid $color1;
+        color: $color1;
+        text-align: center;
+        width: 40%;
+        margin: 10px auto;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 5px;
+        font-weight: bold;
+        transition: 0.3s;
+        &:hover {
+            border-bottom: 2px solid $color3;
+            color: $color3;
+        }
+    }
+}

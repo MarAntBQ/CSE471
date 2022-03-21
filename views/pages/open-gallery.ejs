@@ -1,0 +1,30 @@
+<div class="open-gallery">
+    <a href="/new-review" class="return-btn fs25px"><i class="fa-solid fa-chevron-left"></i></a>
+    <h2 class="fs30px">Select Pictures!</h2>
+    <hr>
+    <div class="photosGalery2" id="photosGalery2">
+        <img src="/img/reviews/pics/p1.jpg" alt="" class="photoselect">
+        <img src="/img/reviews/pics/p2.jpg" alt="" class="photoselect">
+        <img src="/img/reviews/pics/p3.jpg" alt="" class="photoselect">
+        <img src="/img/reviews/pics/p4.jpg" alt="" class="photoselect">
+        <img src="/img/reviews/pics/p5.jpg" alt="" class="photoselect">
+        <img src="/img/reviews/pics/p1.jpg" alt="" class="photoselect">
+        <img src="/img/reviews/pics/p2.jpg" alt="" class="photoselect">
+        <img src="/img/reviews/pics/p3.jpg" alt="" class="photoselect">
+        <img src="/img/reviews/pics/p4.jpg" alt="" class="photoselect">
+    </div>
+    <a href="/new-review-2" class="normal-btn">Import</a>
+</div>
+
+<script>
+    let photosGalery = document.getElementById("photosGalery2");
+    photosGalery.addEventListener("click", event => {
+        if (event.target.classList.contains("photoselect")) {
+            if (event.target.classList.contains("active")) {
+                event.target.classList.remove("active");
+            } else {
+                event.target.classList.add("active");
+            }
+        }
+    });
+</script>

@@ -1,0 +1,61 @@
+.form {
+    margin: 5px 0px;
+    input {
+        width: 100%;
+        margin: 2.5px 0px;
+        padding: 10px;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 5px;
+        //font-size: 20px;
+        font-family: inherit;
+        //font-weight: bold;
+        //background: $color3;
+        transition: 0.3s;
+        //color: white;
+        //font-weight: bold;
+        &.password {
+
+        }
+        &::placeholder {
+            //color: white;
+            //font-weight: bold;
+        }
+        &:focus {
+            outline-width: 0;
+            border: 1px solid $color3;
+        }
+    }
+    .check-container {
+        margin: 5px 0px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        input {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            font-size: 25px;
+            transform: scale(1.2);
+            background: $color2;
+            cursor: inherit;
+        }
+        label {
+            cursor: inherit;
+            text-align: justify;
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 5px;
+            width: 100%;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $color6;
+        font-weight: bold;
+        transition: 0.3s;
+        &:hover {
+            color: $color3;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@font-face {
+    font-family: MyHelvetica;
+    src: url(fonts/Helvetica.ttf);
+}
+
+@font-face {
+    font-family: MyHelveticaBold;
+    src: url(fonts/Helvetica-Bold.ttf);
+}
+
+body {
+    font-family: MyHelvetica;
+    strong {
+        font-family: MyHelveticaBold;
+    }
+}

@@ -1,0 +1,30 @@
+.return-btn {
+    text-decoration: none;
+    color: $color5;
+    transition: 0.3s;
+
+    &:hover {
+        color: $color3;
+    }
+}
+
+.normal-btn {
+    display: block;
+    background: $color2;
+    color: $color6;
+    width: 75%;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: none;
+    //margin: 5px;
+    padding: 15px 10px;
+    border-radius: 3px;
+    font-size: 12.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.3s;
+    color: white;
+    &:hover {
+        background: $color1;
+    }
+}

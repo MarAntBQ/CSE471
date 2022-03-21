@@ -1,0 +1,90 @@
+.login {
+    .logo {
+        margin: 20px 0px;
+        @include shadow;
+        img {
+            display: block;
+            width: 40%;
+            margin: 0px auto;
+            z-index: 3;
+            animation: 1s loginIMG ease;
+            @keyframes loginIMG {
+                from {
+                    opacity: 0;
+                    transform: scale(0.5);
+                }
+                to {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+        }
+        h1 {
+            //margin-top: 5px;
+            text-align: center;
+            animation: 1s login ease;
+            @keyframes login {
+                from {
+                    opacity: 0;
+                    transform: translateY(-50%);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+    .login-bnts {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0px;
+        a {
+            display: block;
+            background: $color2;
+            color: $color6;
+            width: 48%;
+            text-align: center;
+            text-decoration: none;
+            //margin: 5px;
+            padding: 12px 10px;
+            border-radius: 3px;
+            font-size: 12.5px;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: 0.3s;
+            &:nth-child(1) {
+                //font-weight: bold;
+                color: white;
+                &:hover {
+                    background: $color1;
+                }
+            }
+            &:nth-child(2) {
+                background: #4267B2;
+                color: white;
+                &:hover {
+                    background: #30497a;
+                }
+            }
+        }
+    }
+
+    .login-register-btn{
+        display: block;
+        border-bottom: 2px solid $color1;
+        color: $color1;
+        text-align: center;
+        width: 75%;
+        margin: 20px auto;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 5px;
+        font-weight: bold;
+        transition: 0.3s;
+        &:hover {
+            border-bottom: 2px solid $color3;
+            color: $color3;
+        }
+    }
+}

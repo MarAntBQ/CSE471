@@ -1,0 +1,35 @@
+<div class="info-place">
+    <a href="/home" class="return-btn fs25px"><i class="fa-solid fa-chevron-left"></i></a>
+    <img src="/img/places/junco-banner.jpg" alt="" class="dblock mauto w100p">
+    <div class="place-headers">
+        <div class="left">
+            <h2 class="fs30px">El Junco</h2>
+            <p class="subtitle">1h - 1h 30 min</p>
+        </div>
+        <div class="right">
+            <div class="top">
+                <i class="fa-solid fa-heart active" id="heart"></i> <p class="review"><i class="fa-solid fa-star"></i><strong>5.0</strong></p>
+            </div>
+            <a href="/" class="book-btn">Book</a>
+        </div>
+    </div>
+    <hr>
+    <p class="place-description">El Junco Lagoon is a lake in the highlands of San Cristóbal Island in the Galápagos Islands. Despite the name, it is a volcanic crater lake rather than a lagoon.</p>
+    <hr>
+    <h3 class="tac"><i class="fa-solid fa-location-dot"></i> Location</h3>
+    <p class="mt5px tac"><strong>San Cristobal, Galápagos, Ecuador</strong></p>
+    <a href="map" class="normal-btn"><i class="fa-solid fa-location-arrow"></i> Directions</a>
+    <hr>
+    <h3 class="tac"><i class="fa-solid fa-users"></i> Reviews (50)</h3>
+    <a href="reviews" class="login-register-btn"><i class="fa-solid fa-circle-info"></i> Read</a>
+</div>
+
+<script>
+    document.getElementById("heart").addEventListener("click", event => {
+        if (event.target.classList.contains("active")) {
+            event.target.classList.remove("active");
+        } else {
+            event.target.classList.add("active");
+        }
+    });
+</script>

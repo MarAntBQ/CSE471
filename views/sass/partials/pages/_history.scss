@@ -1,0 +1,80 @@
+.history {
+    h2 {
+        margin-top: 10px;
+    }
+
+    .subtitle {
+        margin: 5px 0px;
+        font-size: 15px;
+        font-weight: 590;
+    }
+
+    hr {
+        background: $color5;
+        border: 0px;
+        height: 0.5px;
+        margin: 10px 0px;
+    }
+
+    .all-track-places {
+        .place {
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            background: white;
+            border: 1px solid rgba(128, 128, 128, 0.274);
+            box-shadow: 0 3px 7px 0 rgb(0 0 0 / 12%), inset 0 -1px 0 0 #dadce0;
+            margin: 5px 0px;
+            border-radius: 3px;
+
+            .infoPlace {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                text-decoration: none;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                .fa-heart {
+                    font-size: 20px;
+                    color: $color5;
+
+                    &:hover,
+                    &.active {
+                        color: $color2;
+                    }
+                }
+            }
+
+            .fa-trash {
+                transition: 0.3s;
+                width: 0px;
+                height: 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                overflow: hidden;
+                cursor: pointer;
+
+                &:hover {
+                    background: $color1;
+                    color: white;
+                }
+            }
+
+            &:hover {
+                .fa-trash {
+                    width: 50px;
+                    height: 50px;
+                    border-left: 1px solid $color5;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}

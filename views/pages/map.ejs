@@ -1,0 +1,24 @@
+<div class="mapPage">
+    <a href="/info-place" class="return-btn fs25px"><i class="fa-solid fa-chevron-left"></i></a>
+    <h2 class="fs30px">El Junco</h2>
+    <p class="subtitle">San Cristobal, Galápagos, Ecuador</p>
+    <hr>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.3312763450576!2d-89.48220218576881!3d-0.8952608355758409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9000e74e0a3626f9%3A0xdbaf0e7d6e3f67e0!2sSan%20Cristobal%20Biological%20Reserve!5e0!3m2!1ses-419!2sec!4v1646968798623!5m2!1ses-419!2sec" allowfullscreen="" loading="lazy" class="mapLocation"></iframe>
+    <div class="login-bnts">
+        <a onclick="downloadMap()"><i class="fa-solid fa-download"></i>&nbsp; Download</a>
+        <a href="saved-maps"><i class="fa-solid fa-globe"></i>&nbsp; Saved Maps</a>
+    </div>
+</div>
+
+<script>
+    function downloadMap() {
+        let btn = event.target;
+        if (btn.classList.contains("active")) {
+            btn.classList.remove("active");
+            btn.innerHTML = `<i class="fa-solid fa-download"></i>&nbsp; Download`;
+        } else {
+            btn.classList.add("active");
+            btn.innerHTML = `Downloaded`;
+        }
+    }
+</script>

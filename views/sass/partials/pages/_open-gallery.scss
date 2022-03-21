@@ -1,0 +1,36 @@
+.open-gallery {
+    padding-top: 10px;
+
+    .return-btn {
+        //margin-top: 10px;
+    }
+
+    h2 {}
+
+    hr {
+        background: $color5;
+        border: 0px;
+        height: 0.5px;
+        margin: 10px 0px;
+    }
+
+    .photosGalery2 {
+        margin: 2.5px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        img {
+            width: 72px;
+            height: 72px;
+            margin: 5px;
+            border: 2px solid white;
+            transition: 0.3s;
+            cursor: pointer;
+            &.active {
+                border: 2px solid $color3;
+                //filter: grayscale(50%);
+            }
+        }
+    }
+
+}

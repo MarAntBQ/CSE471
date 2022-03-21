@@ -1,0 +1,14 @@
+@import 'marbust-framework/marbust-framework';
+
+
+$color1: rgb(62, 183, 103);
+$color2: rgb(239, 59, 36);
+$color3: rgb(236, 142, 35);
+$color4: rgb(58, 57, 56);
+$color5: rgb(103, 103, 103);
+$color6: rgb(10, 14, 10);
+
+@import 'partials/components/mixins';
+@import 'partials/fonts';
+@import 'partials/layout';
+@import 'partials/header';

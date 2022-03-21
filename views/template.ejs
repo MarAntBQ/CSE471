@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('includes/head.ejs')%>
+    <%- include('includes/pwa.ejs')%>
+</head>
+<body>
+    <div class="phone">
+        <header>
+            <%- include('includes/header.ejs')%>
+            </header>
+            <main class="app-body">
+                <%- include('pages/' + PagetoLoad) %>
+            </main>
+            <footer>
+                <%- include('includes/pwa-sw.ejs')%>
+                <%- include('includes/footer.ejs')%>
+            </footer>
+    </div>
+</body>
+</html>

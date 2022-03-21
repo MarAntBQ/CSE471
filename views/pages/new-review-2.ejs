@@ -1,0 +1,48 @@
+<div class="new-review">
+    <a href="/reviews" class="return-btn fs25px"><i class="fa-solid fa-chevron-left"></i></a>
+    <h2 class="fs30px">Write your Review!</h2>
+    <hr>
+    <div class="place-before">
+        <img src="/img/reviews/place/junco.jpg" alt="">
+        <div class="place-title">
+            <p>El Junco</p>
+            <p>Tue. Feb 10th - 12:30</p>
+        </div>
+    </div>
+    <textarea name="" id="" cols="30" rows="10" placeholder="Share your comments, review, experiences">Wonderful day to go out on a hike! Great weather too! Makes me feel alive 😀
+    </textarea>
+    <div class="stars-container">
+        <div class="rate" id="rate-ctnr">
+            <i class="fa-solid fa-star active" data-rate="1"></i>
+            <i class="fa-solid fa-star active" data-rate="2"></i>
+            <i class="fa-solid fa-star active" data-rate="3"></i>
+            <i class="fa-solid fa-star active" data-rate="4"></i>
+            <i class="fa-solid fa-star" data-rate="5"></i>
+        </div>
+        <a class="fa-solid fa-camera" href="opengalery.html"></a>
+    </div>
+    <div class="photosGalery">
+        <img src="/img/reviews/pics/p1.jpg" alt="">
+        <img src="/img/reviews/pics/p2.jpg" alt="">
+        <img src="/img/reviews/pics/p3.jpg" alt="">
+        <img src="/img/reviews/pics/p4.jpg" alt="">
+    </div>
+    <a href="/reviews" class="normal-btn">Post</a>
+</div>
+
+<script>
+    let rate = document.getElementById("rate-ctnr");
+    rate.addEventListener("click", event => {
+        if (event.target.classList.contains("fa-star")) {
+            let level = event.target.dataset.rate;
+            let allRates = rate.getElementsByClassName("fa-star");
+            console.log(allRates);
+            for (let i = 0; i < allRates.length; i++) {
+                allRates[i].classList.remove("active");
+            }
+            for (let i = 0; i < level; i++) {
+                allRates[i].classList.add("active");
+            }
+        }
+    });
+</script>
