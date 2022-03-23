@@ -32,7 +32,7 @@
             display: block;
             background: $color2;
             color: $color6;
-            width: 48%;
+            width: 70%;
             text-align: center;
             text-decoration: none;
             //margin: 5px;
@@ -45,6 +45,7 @@
             cursor: pointer;
             &:nth-child(1) {
                 //font-weight: bold;
+                width: 27%;
                 color: white;
                 &:hover {
                     background: $color1;

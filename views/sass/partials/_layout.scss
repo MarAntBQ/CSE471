@@ -34,6 +34,11 @@ body {
             max-height: 22px;
         }
         .app-body-login, .app-body, main {
+            transition: 0.3s;
+            &.active {
+                background: rgba(0, 0, 0, 0.178);
+                filter: blur(4px);
+            }
             &.app-body-login {
                 height: calc(100% - 22px);
             }

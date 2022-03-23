@@ -1,4 +1,5 @@
 header {
+    background: none;
     ul {
         display: none;
         .profile {
@@ -47,6 +48,7 @@ header {
         background: white;
         .logoCtnr {
             display: flex;
+            text-decoration: none;
             margin-left: 50px;
             img {
                 width: 20px;
@@ -73,18 +75,21 @@ header {
         
         transition: 0.3s;
         &.active {
-            background: rgba(0, 0, 0, 0.178);
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            z-index: 12;
-            overflow: hidden;
+            //background: red;
+            //background: rgba(0, 0, 0, 0.178);
+            //position: absolute;
+            //width: 100%;
+            //height: 100%;
+            //z-index: 12;
+            //overflow: hidden;
             ul {
+                position: absolute;
                 background: white;
                 display: block;
                 width: 70%;
                 max-height: calc(100% - 40px);
                 height: calc(100% - 40px);
+                z-index: 12;
                 overflow-y: auto;
                 list-style: none;
                 @include scroll;
@@ -115,15 +120,18 @@ header {
             }
         }
         &.desactive {
-            background: rgba(0, 0, 0, 0.178);
-            position: block;
-            width: 100%;
-            height: 100%;
-            z-index: 12;
-            overflow: hidden;
+            background: none;
+            //background: rgba(0, 0, 0, 0.178);
+            //position: absolute;
+            //width: 100%;
+            //height: 100%;
+            //z-index: 12;
+            //overflow: hidden;
             ul {
                 background: white;
-                display: fixed;
+                position: absolute;
+                z-index: 12;
+                //display: fixed;
                 width: 70%;
                 max-height: calc(100% - 40px);
                 height: calc(100% - 40px);

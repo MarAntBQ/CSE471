@@ -42511,12 +42511,17 @@ body .phone .notifications {
   max-height: 22px;
 }
 body .phone .app-body-login, body .phone .app-body, body .phone main {
+  transition: 0.3s;
   height: calc(100% - 40px);
   overflow-y: auto;
   overflow-x: hidden;
   padding: 0px 10px;
   scrollbar-width: thin;
   scrollbar-color: #ec8e23 #ef3b24;
+}
+body .phone .app-body-login.active, body .phone .app-body.active, body .phone main.active {
+  background: rgba(0, 0, 0, 0.178);
+  filter: blur(4px);
 }
 body .phone .app-body-login.app-body-login, body .phone .app-body.app-body-login, body .phone main.app-body-login {
   height: calc(100% - 22px);
@@ -42898,7 +42903,7 @@ body .phone .app-body-login .info-place .place-headers .left, body .phone .app-b
 }
 body .phone .app-body-login .info-place .place-headers .right, body .phone .app-body .info-place .place-headers .right, body .phone main .info-place .place-headers .right {
   display: flex;
-  align-content: flex-start;
+  align-content: center;
   flex-wrap: wrap;
   min-width: 100px;
   max-width: 100px;
@@ -43002,7 +43007,7 @@ body .phone .app-body-login .mapPage .login-bnts a, body .phone .app-body .mapPa
   display: block;
   background: #ef3b24;
   color: #0a0e0a;
-  width: 48%;
+  width: 70%;
   text-align: center;
   text-decoration: none;
   padding: 12px 10px;
@@ -43014,6 +43019,7 @@ body .phone .app-body-login .mapPage .login-bnts a, body .phone .app-body .mapPa
   cursor: pointer;
 }
 body .phone .app-body-login .mapPage .login-bnts a:nth-child(1), body .phone .app-body .mapPage .login-bnts a:nth-child(1), body .phone main .mapPage .login-bnts a:nth-child(1) {
+  width: 27%;
   color: white;
 }
 body .phone .app-body-login .mapPage .login-bnts a:nth-child(1):hover, body .phone .app-body .mapPage .login-bnts a:nth-child(1):hover, body .phone main .mapPage .login-bnts a:nth-child(1):hover {
@@ -43338,6 +43344,9 @@ body .phone .app-body-login .results hr, body .phone .app-body .results hr, body
   margin: 10px 0px;
 }
 
+header {
+  background: none;
+}
 header ul {
   display: none;
 }
@@ -43385,6 +43394,7 @@ header nav {
 }
 header nav .logoCtnr {
   display: flex;
+  text-decoration: none;
   margin-left: 50px;
 }
 header nav .logoCtnr img {
@@ -43408,20 +43418,14 @@ header nav #menu-btn:hover, header nav #user-btn:hover {
 header #mobile-menu {
   transition: 0.3s;
 }
-header #mobile-menu.active {
-  background: rgba(0, 0, 0, 0.178);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 12;
-  overflow: hidden;
-}
 header #mobile-menu.active ul {
+  position: absolute;
   background: white;
   display: block;
   width: 70%;
   max-height: calc(100% - 40px);
   height: calc(100% - 40px);
+  z-index: 12;
   overflow-y: auto;
   list-style: none;
   scrollbar-width: thin;
@@ -43458,16 +43462,12 @@ header #mobile-menu.active ul li a:hover, header #mobile-menu.active ul li a.act
   color: white;
 }
 header #mobile-menu.desactive {
-  background: rgba(0, 0, 0, 0.178);
-  position: block;
-  width: 100%;
-  height: 100%;
-  z-index: 12;
-  overflow: hidden;
+  background: none;
 }
 header #mobile-menu.desactive ul {
   background: white;
-  display: fixed;
+  position: absolute;
+  z-index: 12;
   width: 70%;
   max-height: calc(100% - 40px);
   height: calc(100% - 40px);
