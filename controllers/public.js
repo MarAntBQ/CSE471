@@ -61,11 +61,43 @@ exports.getInfoPlace = (req, res, next) => {
         SocialLinks: socialLinks
     });
 };
+//Info Place
+exports.getInfoPlace2 = (req, res, next) => {
+    res.render('template', {
+        pageTitle: 'Information about Place',
+        PagetoLoad: 'info-place2',
+        SocialLinks: socialLinks
+    });
+};
+//Info Place
+exports.getInfoPlace3 = (req, res, next) => {
+    res.render('template', {
+        pageTitle: 'Information about Place',
+        PagetoLoad: 'info-place3',
+        SocialLinks: socialLinks
+    });
+};
 //Map
 exports.getMap = (req, res, next) => {
     res.render('template', {
         pageTitle: 'Map',
         PagetoLoad: 'map',
+        SocialLinks: socialLinks
+    });
+};
+//Map
+exports.getMap2 = (req, res, next) => {
+    res.render('template', {
+        pageTitle: 'Map',
+        PagetoLoad: 'map2',
+        SocialLinks: socialLinks
+    });
+};
+//Map
+exports.getMap3 = (req, res, next) => {
+    res.render('template', {
+        pageTitle: 'Map',
+        PagetoLoad: 'map3',
         SocialLinks: socialLinks
     });
 };

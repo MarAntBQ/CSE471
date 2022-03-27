@@ -16,8 +16,12 @@ router.get('/home', publicController.getHome);
 router.get('/nearby', publicController.getNearby);
 //Info Place
 router.get('/info-place', publicController.getInfoPlace);
+router.get('/info-place2', publicController.getInfoPlace2);
+router.get('/info-place3', publicController.getInfoPlace3);
 //Map
 router.get('/map', publicController.getMap);
+router.get('/map2', publicController.getMap2);
+router.get('/map3', publicController.getMap3);
 //Reviews
 router.get('/reviews', publicController.getReviews);
 //New Review
